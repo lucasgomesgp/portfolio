@@ -1,18 +1,17 @@
-
-.menu{
+.menu {
     gap: 2rem;
     align-items: center;
     list-style: none;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: #ffffff;
 
-   
+
 }
 
-.portfolio__header{
+.portfolio__header {
     width: 100%;
     height: 12.0625rem;
     background-color: #0148FF;
@@ -22,18 +21,18 @@
     justify-content: space-around;
     position: relative;
 
-    h2{
+    h2 {
         font-weight: bold;
         font-size: 2.25rem;
     }
-    
-    &-central_items{
+
+    &-central_items {
         font-size: 1.375rem;
         font-weight: bold;
         display: flex;
     }
-    
-    &-toggle_menu{
+
+    &-toggle_menu {
         top: 10rem;
         right: 10rem;
         background-color: #0f43c7;
@@ -43,27 +42,41 @@
         gap: 1rem;
         position: absolute;
         padding: 1rem 2rem;
-        box-shadow: 0 4px 4px rgba(255, 255, 255, 0.8);
-        
-        & a{
-            transition: filter 0.8 ease-in-out;
-            width: 100%;
+        box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.8);
 
-            &:hover{
+        li {
+            width: 100%;
+            text-align: center;
+            border-bottom: 0.2px solid #ffffff;
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        a {
+            transition: filter 0.8 ease-in-out;
+
+            &:hover {
                 filter: brightness(0.8);
             }
         }
     }
 
-    &-icons{
+    &-toggle-icons {
+        cursor: pointer;
+    }
+
+    &-icons {
         display: flex;
         align-items: center;
         gap: 2rem;
 
-        &-social{
+        &-social {
             cursor: pointer;
             transition: filter 0.8 ease-in-out;
-            &:hover{
+
+            &:hover {
                 filter: brightness(0.8);
             }
         }
@@ -72,49 +85,67 @@
 }
 
 .scale-up-center {
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+
 @-webkit-keyframes scale-up-center {
     0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-  }
-  @keyframes scale-up-center {
+}
+
+@keyframes scale-up-center {
     0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
+}
 
-@media screen and (max-width: 980px) {
-    .portfolio__header{
-
-        &-central_items{
+@media screen and (max-width: 1440px) {
+    .portfolio__header {
+        &-toggle-icons {
             display: none;
         }
+    }
+}
 
-        &-icons{
+@media screen and (max-width: 980px) {
+    .portfolio__header {
+        &-icons {
             display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 705px) {
+    .portfolio__header {
+        &-central_items {
+            display: none;
+        }
+        &-toggle-icons {
+            display: initial;
         }
     }
 
 }
 
 @media screen and (max-width: 550px) {
-    .portfolio__header{
+    .portfolio__header {
 
-        &-toggle_menu{
+        &-toggle_menu {
             right: 2rem;
         }
 
@@ -122,9 +153,10 @@
 }
 
 @media screen and (max-width: 375px) {
-    .portfolio__header{
-        &-toggle_menu{
+    .portfolio__header {
+        &-toggle_menu {
             position: fixed;
+            right: 0;
             width: 100%;
         }
     }
