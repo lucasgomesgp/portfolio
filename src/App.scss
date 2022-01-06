@@ -1,0 +1,46 @@
+.portfolio__container {
+    &-initial-items {
+        position: relative;
+    }
+}
+
+.title__section {
+    margin: 0 0 2rem 6rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        height: 8px;
+        width: 4%;
+        border-radius: 10px;
+        background: #0148FF;
+    }
+}
+
+.deploy{
+    width: 140px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #073B9F;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.github{
+    width: 140px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #141414;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}

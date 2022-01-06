@@ -1,0 +1,24 @@
+.portfolio__habilities{
+    margin-top: 152px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        &_image{
+            max-width: 100%;
+        }
+
+        &_icons{
+            display: flex;
+            flex: 0.7;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}

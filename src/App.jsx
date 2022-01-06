@@ -10,8 +10,10 @@ import "./App.scss";
 function App() {
   return (
     <div className="portfolio__container">
-      <Header />
-      <IAm />
+      <div className="portfolio__container-initial-items">
+        <Header />
+        <IAm />
+      </div>
       <AboutMe />
       <Habilities />
       <Projects />

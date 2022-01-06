@@ -1,0 +1,41 @@
+.portfolio__myprojects{
+    margin: 10rem 0 14rem 0;
+
+    &_projects{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &-proj{
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 0 4px 2px #0148FF;
+            border-radius: 20px;
+            padding-bottom: 2rem;
+            img{
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            &-techs{
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+
+            &-info{
+                font-weight: 500;
+                line-height: 1.5rem;
+                padding: 0.8rem;
+            }
+            &-links{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.2rem;
+            }
+        }
+    }
+}
