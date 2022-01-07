@@ -9,7 +9,7 @@ export function IAm() {
                 <div className="portfolio__iam-functions">
                     <span>Programador,</span>
                     <span>Desenvolvedor Frontend,</span>
-                    <span>e Apaixonado pelo mundo Tech</span>
+                    <span>Um apaixonado pelo mundo Tech</span>
                 </div>
             </h1>
             <div className="portfolio__iam-image">

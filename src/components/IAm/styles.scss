@@ -25,13 +25,13 @@
             overflow: hidden;
 
             &:first-child{
-                animation: brightnessSpan 300ms normal infinite, changeWidth1 2s normal steps(50) 1s both;
+                animation: brightnessSpan 300ms normal infinite, changeWidth1 2s normal steps(50) 1s both, changeVisibility 100ms normal 4s forwards;
             }
             &:nth-child(2){
-                animation: brightnessSpan 300ms normal infinite 2s, changeWidth2 2s normal steps(50) 2s both;
+                animation: brightnessSpan 300ms normal infinite 2s, changeWidth2 2s normal steps(50) 2s both, changeVisibility 100ms normal 6s forwards;
             }
             &:last-child{
-                animation: brightnessSpan 300ms normal infinite 4s, changeWidth3 2s normal steps(50) 4s both;
+                animation: brightnessSpan 300ms normal infinite 4s, changeWidth3 3s normal steps(50) 4s both infinite;
             }
         }
     }
@@ -82,6 +82,18 @@
     }
 
     100% {
-        width: 84%;
+        width: 90%;
+    }
+}
+
+@keyframes changeVisibility{
+    0%{
+        opacity: 1;
+    }
+    
+    100%{
+        width: 0;
+        height: 0;
+        opacity: 0;
     }
 }
