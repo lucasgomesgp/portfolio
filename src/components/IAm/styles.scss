@@ -21,7 +21,18 @@
         span {
             border-right: 2px solid #0148FF;
             padding-right: 2px;
-            animation: changeWidth 500ms nromal 1s infinite;
+            white-space: nowrap;
+            overflow: hidden;
+
+            &:first-child{
+                animation: brightnessSpan 300ms normal infinite, changeWidth1 2s normal steps(50) 1s both;
+            }
+            &:nth-child(2){
+                animation: brightnessSpan 300ms normal infinite 2s, changeWidth2 2s normal steps(50) 2s both;
+            }
+            &:last-child{
+                animation: brightnessSpan 300ms normal infinite 4s, changeWidth3 2s normal steps(50) 4s both;
+            }
         }
     }
 
@@ -45,32 +56,32 @@
     }
 }
 
-@keyframes changeWidth {
+@keyframes changeWidth1 {
     0% {
         width: 0;
     }
 
     100% {
-        width: 35%;
+        width: 38%;
     }
 }
 
-@keyframes changeWidthSpan2 {
+@keyframes changeWidth2 {
     0% {
         width: 0;
     }
 
     100% {
-        width: 45%;
+        width: 67%;
     }
 }
 
-@keyframes changeWidthSpan3 {
+@keyframes changeWidth3 {
     0% {
         width: 0;
     }
 
     100% {
-        width: 65%;
+        width: 84%;
     }
 }
