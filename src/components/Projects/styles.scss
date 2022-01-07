@@ -3,9 +3,11 @@
 
     &_projects{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-
+        gap: 1rem;
+        
         &-proj{
             width: 300px;
             text-align: center;

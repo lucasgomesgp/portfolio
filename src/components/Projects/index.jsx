@@ -16,7 +16,6 @@ export function Projects() {
                     <div className="portfolio__myprojects_projects-proj-info">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Porro molestiae quidem dignissimos dolor voluptates sint hic facilis dicta vitae.
-                        Ducimus, sunt porro! Nemo nostrum aperiam, magnam repellat maxime quibusdam ipsam?
                     </div>
                     <div className="portfolio__myprojects_projects-proj-links">
                         <a href="#" className="deploy">
@@ -39,7 +38,6 @@ export function Projects() {
                     <div className="portfolio__myprojects_projects-proj-info">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Porro molestiae quidem dignissimos dolor voluptates sint hic facilis dicta vitae.
-                        Ducimus, sunt porro! Nemo nostrum aperiam, magnam repellat maxime quibusdam ipsam?
                     </div>
                     <div className="portfolio__myprojects_projects-proj-links">
                         <a href="#" className="deploy">

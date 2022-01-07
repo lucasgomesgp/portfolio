@@ -10,7 +10,7 @@ export function AboutMe() {
                     <img src={personImg} alt="Pessoa no computador" />
                 </div>
                 <div className="portfolio__aboutme__items-texts">
-                    <h2>Sou um jovem de 21 anos, apaixonado pelo mundo da programação e da tecnologia</h2>
+                    <h2>Sou um jovem de 21 anos, apaixonado pelo mundo da programação e da tecnologia.</h2>
                 </div>
             </div>
         </div>

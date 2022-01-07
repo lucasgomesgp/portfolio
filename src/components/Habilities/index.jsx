@@ -3,10 +3,10 @@ import html from "../../assets/icons/HTML.svg";
 import css from "../../assets/icons/CSS.svg";
 import javascript from "../../assets/icons/Javascript.svg";
 import bootstrap from "../../assets/icons/Bootstrap.svg";
-import react from "../../assets/icons/React.svg";
-import node from "../../assets/icons/Node.svg";
+import react from "../../assets/icons/ReactJS.svg";
+import node from "../../assets/icons/NodeJS.svg";
 import github from "../../assets/icons/Github.svg";
-import next from "../../assets/icons/Next.svg";
+import next from "../../assets/icons/NextJS.svg";
 import "./styles.scss";
 
 export function Habilities() {

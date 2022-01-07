@@ -8,8 +8,8 @@ export function IAm() {
                 Lucas Gomes, sou um
                 <div className="portfolio__iam-functions">
                     <span>Programador</span>
-                    <span>Desenvolvedor Web</span>
-                    <span>apaixonado pelo mundo Tech</span>
+                    <span>Desenvolvedor Frontend</span>
+                    <span>Apaixonado pelo mundo Tech</span>
                 </div>
             </h1>
             <div className="portfolio__iam-image">

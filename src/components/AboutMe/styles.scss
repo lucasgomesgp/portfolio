@@ -1,44 +1,32 @@
 .portfolio__aboutme {
     margin-top: 205px;
-
-    &-title {
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -1rem;
-            height: 8px;
-            width: 4%;
-            border-radius: 10px;
-            background: #0148FF;
-        }
-    }
-
+    
     &__items {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        width: 100%;
 
         &-image {
             flex: 1;
             background: url(../../assets/background_blue.svg) center no-repeat;
-            height: 750px;
+            min-height: 750px;
             display: flex;
             justify-content: center;
-            align-items: center;
-
+            
             img {
                 max-width: 359px;
             }
         }
-
+        
         &-texts {
             flex: 1;
             line-height: 32px;
-
+            text-align: justify;
+            
+            h2{
+                width: 70%;
+            }
         }
     }
 }
