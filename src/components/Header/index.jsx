@@ -1,13 +1,15 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { ThemeContext } from "../../hooks/ThemeContext";
 
 import "./styles.scss";
 
 export function Header() {
     const [toggleMenu, setToggleMenu] = useState(false);
+    const { theme, setTheme } = useContext(ThemeContext);
     const menuRef = useRef();
 
     function toggleMenuValue() {
@@ -19,9 +21,13 @@ export function Header() {
             setToggleMenu(false);
             menuRef.current.style.display = "none";
         }
-
-
-
+    }
+    function toggleTheme() {
+        if (theme === "light") {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
     }
     return (
         <>
@@ -40,6 +46,14 @@ export function Header() {
                     <a href="https://www.linkedin.com/in/lucas-gomes-aab356173/" target="blank">
                         <TiSocialLinkedinCircular size={50} color="#ffffff" className="portfolio__header-icons-social" />
                     </a>
+                    <button onClick={toggleTheme} className="toggleTheme">
+                        {
+                            theme === "light" ?
+                                <BsFillMoonFill size={25} color="#FFFFFF" />
+                                :
+                                <BsSunFill size={25} color="#EEFF00" />
+                        }
+                    </button>
                 </div>
                 <div className="portfolio__header-toggle-icons">
                     {
@@ -57,8 +71,18 @@ export function Header() {
                 <li><a href="#aboutme">Sobre mim</a></li>
                 <li><a href="#habilities">Habilidades</a></li>
                 <li><a href="#contact">Contato</a></li>
-                <li><a href="#github">Github</a></li>
-                <li><a href="#linkedin">Linkedin</a></li>
+                <li><a href="https://github.com/lucasgomesgp" target="blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-gomes-aab356173/" target="blank">Linkedin</a></li>
+                <li>
+                    <button onClick={toggleTheme} className="toggleTheme">
+                        {
+                            theme === "light" ?
+                                <BsFillMoonFill size={25} color="#FFFFFF" />
+                                :
+                                <BsSunFill size={25} color="#EEFF00" />
+                        }
+                    </button>
+                </li>
             </ul>
         </>
 

@@ -53,3 +53,25 @@
     border: none;
     outline: none;
 }
+
+.light{
+    background-color: #ffffff;
+}
+
+.dark{
+    background-color: #000444;
+}
+
+.toggleTheme{
+    padding: 0.4rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #29334e;
+    cursor: pointer;
+    transition: filter 200ms ease-in-out;
+    outline: none;
+    
+    &:hover{
+        filter: brightness(0.4);
+    }
+}

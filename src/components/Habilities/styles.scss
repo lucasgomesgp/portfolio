@@ -9,8 +9,12 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 4rem;
+
         &_image{
-            max-width: 100%;
+
+            img{
+                max-width: 100%;
+            }
         }
 
         &_icons{
